@@ -1,0 +1,36 @@
+{
+  "name": "sorbet",
+  "main": "./lib/main",
+  "version": "1.0.0",
+  "description": "Sorbet type checker for Atom-IDE",
+  "repository": "https://github.com/visorgg/sorbet-atom",
+  "consumedServices": {
+    "busy-signal": {
+      "versions": {
+        "1.0.0": "consumeSignal"
+      }
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "configSchema": {
+    "sorbetCommand": {
+      "type": "string",
+      "default": "bundle exec srb",
+      "description": "Command to run sorbet"
+    },
+    "verbose": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable verbose logging"
+    },
+    "fileExtensionMatcher": {
+      "type": "string",
+      "default": "\\.rb$",
+      "description": "Match files that should be checked when saved"
+    }
+  }
+}
