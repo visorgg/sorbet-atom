@@ -1,7 +1,7 @@
 {
   "name": "sorbet",
   "main": "./lib/main",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "Sorbet type checker for Atom-IDE",
   "repository": "https://github.com/visorgg/sorbet-atom",
   "consumedServices": {
@@ -15,8 +15,7 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "configSchema": {
     "sorbetCommand": {
       "type": "string",
